@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>神经衰弱</title>
+  <style>
+    body { font-family: sans-serif; text-align: center; margin-top: 20px; }
+    #game-board { display: grid; grid-template-columns: repeat(4, 150px); gap: 10px; justify-content: center; }
+    .card { width: 150px; height: 150px; border: 1px solid #ccc; cursor: pointer; background-color: #eee; }
+    .card img { width: 100%; height: 100%; object-fit: cover; display: none; }
+    .flipped img { display: block; }
+  </style>
+</head>
+<body>
+  <h1>神经衰弱</h1>
+  <div id="game-board"></div>
+  <div id="win-message" style="display: none; font-size: 24px; color: green; margin-top: 20px;">
+    🎉 おめでとう！！🎉
+  </div>  
+  <button id="reset-button" style="display: none; margin-top: 10px; font-size: 16px;">
+    🔁 もう一回
+  </button>
+
+  <script src="main.js"></script>
+</body>
+</html>
